@@ -1,0 +1,19 @@
+Ref,Quantity,Item,Specification/nominal,Status
+CHASSIS,1,T-shaped chassis plate,"68x130 envelope, 3 mm plywood/acrylic, CAD/DXF included",Verify material and laser kerf
+BRACKET,1,Sensor/caster cross-bracket,"82x39 x3 mm, fixed QTR at Y95",QTR/caster hole placements need measuring
+MOTOR,2,N20 gearmotor,"6 V 1000 RPM 3 mm D shaft",Measure actual length housing face and current
+BRK,2,N20 motor mounting brackets,Motor bracket hole spacing 16 mm assumed,MEASURE before drilling
+WHL,2,Wheels,42 mm diameter x 17 mm wide assumed,Measure widths/hub and shaft fit
+CASTER,1,Metal ball caster,"13 mm ball; assumed face-to-floor height 18 mm",MEASURE housing footprint and actual height
+CASTER_SHIM,1,Caster spacer,7 mm under bracket assumed,Adjust after actual caster dimension
+BATT,1,2S LiPo,"7.4 V nominal 450 mAh; assumed 55x30x15 mm",Measure full battery including cable/connector
+VELCRO,1,Battery strap,20 mm strap width presumed,Measure needed slot size
+PCB_STANDOFF,4,M3 M-F standoff,19 mm nominal from plate top to PCB underside,Account for washer and head thickness
+SENSOR_STANDOFF,2,M2 sensor support,18.825 mm nominal,Final length depends on QTR stack
+ESP32,1,ESP32 DevKit V1,30 pin 51x28 footprint assumed,MEASURE row spacing port and body
+DRIVER,1,TB6612FNG carrier,Pololu #713 drawing used,Confirm vendor footprint before assembly
+BUCK,1,Mini360 MP2307,17x11 mm nominal,MEASURE four hole coordinates
+QTR,1,QTR-8RC,75x12.7 mm Pololu #961,Measure optical face offset and board hole dia
+RIBBON,1,11-conductor sensor ribbon,2.54 mm 1x11,Verify pin orientation and cable color stripe
+MOTOR_CAP,2,100 nF across motor terminals,100 nF ceramic rated >=16V,Place at terminals
+HARDWARE,1,Fastener assortment,M3 PCB and M2 sensor/caster screws,Measure lengths

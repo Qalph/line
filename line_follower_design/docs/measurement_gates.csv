@@ -1,0 +1,33 @@
+Item,Parameter,Nominal in CAD / PCB,Measurement method,Release gate
+ESP32 DevKit,Header row center distance,25.4 mm,Digital calipers pin-row center to center,Must match revised footprint
+ESP32 DevKit,Pin pitch and pin1 orientation,2.54 mm per pin; pin1 EN at x-left rear in PCB local frame,Digital calipers and silkscreen match,Verify before power
+ESP32 DevKit,Body length x width,51 x 28 mm,Calipers over USB overhang and antenna,Check no connector collision
+ESP32 DevKit,USB port protrusion/right-side clearance,4.5mm nominal board-edge inset,Plug actual cable while socketed,USB must be accessible
+TB6612 Carrier,8-pin spacing per row,2.54 mm,Calipers 7 intervals total17.78,Verify actual carrier
+TB6612 Carrier,Header row center distance,12.7 mm Pololu #713,Calipers pin centers,Verify actual carrier not alternate clone
+TB6612 Carrier,Pin1 and motor output names,PWMA etc vs AO1/AO2 and BO1/BO2,Compare vendor silkscreen and manual,Must match netlist
+Mini360,Buck through-hole centers,Assumed +/-6.7 x +/-3.2 mm,Calipers from same two board edges,Update U3 footprint
+Mini360,IN OUT and polarity,4 pins per module,Mark actual product pads,Correct orientation mandatory
+Battery JST,Series and mating connector pitch,TEMP 2.54mm solder-pigtail pads,Inspect connector choose RCY/PH/XH size with calipers,Replace with true chosen connector or qualified JST pigtail
+Battery JST,Positive and negative wiring,BAT+ to J2 pad1,Continuity meter red lead to red wire and + terminal,No power until verified
+Fuse,3A package and time current curve,1206 footprint only preliminary,Part datasheet and inrush/current measurement,Replace footprint if different
+Power switch,Physical footprint,2-pin external harness only preliminary,Calipers true switch mounting geometry,Secure connector/strain relief
+Motor N20,Stall current at 6V,Not known (1.6A some Pololu HP examples),Current-limited test or maker datasheet,Driver thermal and fuse size accepted
+Motor N20,Body cross section and length,10x12x25 mm assumption,Calipers and fit motor brackets,No collision with plate/wheels
+Motor bracket,Two-hole spacing,16 mm assumed,Calipers bracket center-to-center,CAD holes corrected before laser cut
+Wheel,Diameter and true mounted width,42 x 17 mm,Calipers assembled and tyre runout,Min 2mm lateral clearance under load
+Wheel,Hub insertion and shaft sticking out,Not specified; face x approx35 shaft to44 mm,Measure shaft/hub engagement,No rubbing with body or motor brackets
+Battery,Length x width x height,55 x30 x15 mm,Calipers full battery including lead and connector,Standoffs and velcro clear
+QTR-8RC,Outer hole center spacing,69.85 mm,Calipers across centers,Outer supports drilled correctly
+QTR-8RC,Sensor optical axis to QTR hole center longitudinal offset,4 mm assumed,Measure on physical board,Exactly Y+95 confirmed
+QTR-8RC,Optical face and board back side height,3.175 mm max assumed,Measure floor-to-board using test shims,Final bracket spacers adjusted to 3mm optical gap
+QTR-8RC,1x11 header order,J1 fixed 1=3V3 2=GND 3=LEDON 4..11 S1..S8,Continuity test while facing forward,No reverse plug; S1 left
+Caster,Mounting hole center spacing,12 mm assumed,Calipers,Modify bracket before cutting
+Caster,Mount-face to floor height,18 mm assumed,Place caster on plate and measure mount-face height,Level robot after 7mm nominal shim adjustment
+Caster,Housing outer diameter,15 mm assumed,Calipers caster widest section,No sensor housing contact
+Assembly,PCB underside above plate,19 mm nominal,Measure actual standoff height,PCB must clear battery and wheel tops
+Assembly,Total width x length x height,107 x135.5 x~63mm model-only,Tape measure complete wired robot,Within 200x300x150mm including cable ties
+Assembly,COM fore-aft,Y approx+14mm from axle based on mass guesses,Support on axle edge and measure tipping load,COM over or slightly forward of axle
+Firmware,Speed vs applied PWM and battery state,310mm/s/V supplied first estimate,Time 3-5m measured run with known optical flags,Fit motor velocity/voltage curves
+Firmware,Braking deceleration at 1.3m/s,4-6m/s² illustrative target,Measure 10+ stops at full/low battery and bumps,Stop sensor inside 172.5-337mm region
+Firmware,Sensor read interval,1kHz hoped but timeout 1000us,Micros logging or scope GPIO strobe,Use actual dt for PD derivative

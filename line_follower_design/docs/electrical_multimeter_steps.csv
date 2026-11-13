@@ -1,0 +1,18 @@
+Stage,Test,Expected reading,Stop/repair if
+Bare board,VBAT to GND resistance,No persistent low-ohm short; capacitor may charge transiently,Stable short <10 ohm
+Passive soldered,Resistor R1 isolated,100k ohm nominal,Value wrong
+Passive soldered,Resistor R2 isolated,33k ohm nominal,Value wrong
+Battery connected limited bench supply no ESP,Battery input polarity,+7.0 to +8.4V red to BAT+/black to GND,Negative reading or reverse polarity
+Buck adjusted no ESP,Mini360 OUT+ to GND,+5.00 V set with DMM,Outside ~4.9 to5.1V or unstable
+Buck adjusted no ESP,U1 VIN to U1 GND,+5.00V,Not ~5V
+Buck adjusted no ESP,U1 3V3 to GND,0V with U1 absent,Unexpected 5V
+ESP fitted only,U1 3V3 to GND,About 3.3 V,Under ~3.0V or above ~3.6V
+ESP fitted only,BAT_SENSE at 8.4VBAT,2.084 V approx,Wrong divider or ADC node
+ESP fitted only,BAT_SENSE at 7.0VBAT,1.737 V approx,Wrong divider or ADC node
+ESP fitted controls,J START/MODE open,3.3 V at GPIO35 and GPIO39,Not high
+ESP fitted controls,START or MODE pressed,Near 0 V,Not low
+QTR fitted,QTR VCC-GND,3.3V only with bypass installed,Over 3.6V
+Driver fitted no motors,TB VM-GND,VBAT approximately,Wrong VM polarity
+Driver fitted no motors,TB VCC-GND,3.3V approximately,Wrong VCC
+Driver fitted no motors,TB STBY at cold reset,Logic LOW is preferred; check scope power-up,Unexpected active motor outputs before firmware
+Motors attached wheels suspended,Motor average output and spin at low PWM,Low expected; polarity matched L/R,Runaway reverse or brownout

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<export version="E">
+<design><source>line_follower_revA.kicad_sch</source><date>2026-11-13</date><tool>LineFollower RevA script</tool></design>
+<components>
+<comp ref="C1"><value>470uF 16V low-ESR</value><footprint>LF:CP_Radial_D8_P3.5</footprint><libsource lib="LF" part="CP_Radial_D8_P3.5" description="custom module"/></comp>
+<comp ref="C2"><value>22uF 10V</value><footprint>LF:C_0805</footprint><libsource lib="LF" part="C_0805" description="custom module"/></comp>
+<comp ref="C3"><value>100nF 10V</value><footprint>LF:C_0603</footprint><libsource lib="LF" part="C_0603" description="custom module"/></comp>
+<comp ref="C4"><value>100nF optional ADC filter</value><footprint>LF:C_0603</footprint><libsource lib="LF" part="C_0603" description="custom module"/></comp>
+<comp ref="F1"><value>3A fuse verify time-current</value><footprint>LF:Fuse_1206</footprint><libsource lib="LF" part="Fuse_1206" description="custom module"/></comp>
+<comp ref="J1"><value>QTR-8RC RIBBON 1x11</value><footprint>LF:Conn_1x11</footprint><libsource lib="LF" part="Conn_1x11" description="custom module"/></comp>
+<comp ref="J2"><value>JST 2S BAT pigtail pads P2.54</value><footprint>LF:JST_PIGTAIL_MEASURE</footprint><libsource lib="LF" part="JST_PIGTAIL_MEASURE" description="custom module"/></comp>
+<comp ref="J3"><value>MOTOR LEFT</value><footprint>LF:Conn_1x02</footprint><libsource lib="LF" part="Conn_1x02" description="custom module"/></comp>
+<comp ref="J4"><value>MOTOR RIGHT</value><footprint>LF:Conn_1x02</footprint><libsource lib="LF" part="Conn_1x02" description="custom module"/></comp>
+<comp ref="J5"><value>BAT POWER SWITCH 2 pin</value><footprint>LF:Conn_1x02</footprint><libsource lib="LF" part="Conn_1x02" description="custom module"/></comp>
+<comp ref="JP1"><value>STBY SOURCE (1-2 GPIO5,2-3 3V3)</value><footprint>LF:SJ_3</footprint><libsource lib="LF" part="SJ_3" description="custom module"/></comp>
+<comp ref="R1"><value>100k 1% battery divider top</value><footprint>LF:R_0603</footprint><libsource lib="LF" part="R_0603" description="custom module"/></comp>
+<comp ref="R2"><value>33k 1% battery divider bottom</value><footprint>LF:R_0603</footprint><libsource lib="LF" part="R_0603" description="custom module"/></comp>
+<comp ref="R3"><value>10k START pullup</value><footprint>LF:R_0603</footprint><libsource lib="LF" part="R_0603" description="custom module"/></comp>
+<comp ref="R4"><value>10k MODE pullup</value><footprint>LF:R_0603</footprint><libsource lib="LF" part="R_0603" description="custom module"/></comp>
+<comp ref="R5"><value>100k STBY pulldown</value><footprint>LF:R_0603</footprint><libsource lib="LF" part="R_0603" description="custom module"/></comp>
+<comp ref="SW1"><value>START optional</value><footprint>LF:SW_SMD_MEASURE</footprint><libsource lib="LF" part="SW_SMD_MEASURE" description="custom module"/></comp>
+<comp ref="SW2"><value>MODE optional</value><footprint>LF:SW_SMD_MEASURE</footprint><libsource lib="LF" part="SW_SMD_MEASURE" description="custom module"/></comp>
+<comp ref="U1"><value>DOIT ESP32 DevKit V1 (30 pin)</value><footprint>LF:ESP32_30</footprint><libsource lib="LF" part="ESP32_30" description="custom module"/></comp>
+<comp ref="U2"><value>TB6612FNG Pololu carrier</value><footprint>LF:TB6612_Pololu_713</footprint><libsource lib="LF" part="TB6612_Pololu_713" description="custom module"/></comp>
+<comp ref="U3"><value>Mini360 MP2307</value><footprint>LF:Mini360_MEASURE</footprint><libsource lib="LF" part="Mini360_MEASURE" description="custom module"/></comp>
+</components><nets>
+<net code="1" name="+3V3">
+<node ref="U1" pin="30" pinfunction="3V3"/>
+<node ref="U2" pin="10" pinfunction="VCC"/>
+<node ref="J1" pin="1" pinfunction="3V3"/>
+<node ref="C3" pin="1" pinfunction="+"/>
+<node ref="R3" pin="1" pinfunction="+"/>
+<node ref="R4" pin="1" pinfunction="+"/>
+<node ref="JP1" pin="3" pinfunction="3V3"/>
+</net>
+<net code="2" name="+5V">
+<node ref="U1" pin="15" pinfunction="VIN"/>
+<node ref="U3" pin="3" pinfunction="OUT+"/>
+<node ref="C2" pin="1" pinfunction="+"/>
+</net>
+<net code="3" name="AIN1">
+<node ref="U1" pin="17" pinfunction="D22"/>
+<node ref="U2" pin="3" pinfunction="AIN1"/>
+</net>
+<net code="4" name="AIN2">
+<node ref="U1" pin="20" pinfunction="D21"/>
+<node ref="U2" pin="2" pinfunction="AIN2"/>
+</net>
+<net code="5" name="BAT_RAW">
+<node ref="J2" pin="1" pinfunction="BAT+"/>
+<node ref="J5" pin="1" pinfunction="IN"/>
+</net>
+<net code="6" name="BAT_SENSE">
+<node ref="U1" pin="4" pinfunction="D34"/>
+<node ref="R1" pin="2" pinfunction="BOTTOM"/>
+<node ref="R2" pin="1" pinfunction="TOP"/>
+<node ref="C4" pin="1" pinfunction="+"/>
+</net>
+<net code="7" name="BAT_SWITCHED">
+<node ref="J5" pin="2" pinfunction="OUT"/>
+<node ref="F1" pin="1" pinfunction="IN"/>
+</net>
+<net code="8" name="BIN1">
+<node ref="U1" pin="22" pinfunction="D18"/>
+<node ref="U2" pin="5" pinfunction="BIN1"/>
+</net>
+<net code="9" name="BIN2">
+<node ref="U1" pin="24" pinfunction="TX2"/>
+<node ref="U2" pin="6" pinfunction="BIN2"/>
+</net>
+<net code="10" name="GND">
+<node ref="U1" pin="14" pinfunction="GND"/>
+<node ref="U1" pin="29" pinfunction="GND"/>
+<node ref="U2" pin="8" pinfunction="GND"/>
+<node ref="U2" pin="9" pinfunction="GND"/>
+<node ref="U2" pin="16" pinfunction="GND"/>
+<node ref="U3" pin="2" pinfunction="IN-"/>
+<node ref="U3" pin="4" pinfunction="OUT-"/>
+<node ref="J1" pin="2" pinfunction="GND"/>
+<node ref="J2" pin="2" pinfunction="BAT-"/>
+<node ref="C1" pin="2" pinfunction="-"/>
+<node ref="C2" pin="2" pinfunction="-"/>
+<node ref="C3" pin="2" pinfunction="-"/>
+<node ref="R2" pin="2" pinfunction="BOTTOM"/>
+<node ref="C4" pin="2" pinfunction="-"/>
+<node ref="SW1" pin="2" pinfunction="GND"/>
+<node ref="SW2" pin="2" pinfunction="GND"/>
+<node ref="R5" pin="2" pinfunction="GND"/>
+</net>
+<net code="11" name="ML_1">
+<node ref="U2" pin="11" pinfunction="AO1"/>
+<node ref="J3" pin="1" pinfunction="M+"/>
+</net>
+<net code="12" name="ML_2">
+<node ref="U2" pin="12" pinfunction="AO2"/>
+<node ref="J3" pin="2" pinfunction="M-"/>
+</net>
+<net code="13" name="MODE">
+<node ref="U1" pin="3" pinfunction="VN"/>
+<node ref="R4" pin="2" pinfunction="-"/>
+<node ref="SW2" pin="1" pinfunction="VN"/>
+</net>
+<net code="14" name="MR_1">
+<node ref="U2" pin="14" pinfunction="BO1"/>
+<node ref="J4" pin="1" pinfunction="M+"/>
+</net>
+<net code="15" name="MR_2">
+<node ref="U2" pin="13" pinfunction="BO2"/>
+<node ref="J4" pin="2" pinfunction="M-"/>
+</net>
+<net code="16" name="PWMA">
+<node ref="U1" pin="21" pinfunction="D19"/>
+<node ref="U2" pin="1" pinfunction="PWMA"/>
+</net>
+<net code="17" name="PWMB">
+<node ref="U1" pin="25" pinfunction="RX2"/>
+<node ref="U2" pin="7" pinfunction="PWMB"/>
+</net>
+<net code="18" name="QTR_LEDON">
+<node ref="U1" pin="16" pinfunction="D23"/>
+<node ref="J1" pin="3" pinfunction="IR_LEDON"/>
+</net>
+<net code="19" name="QTR_S1">
+<node ref="U1" pin="6" pinfunction="D32"/>
+<node ref="J1" pin="4" pinfunction="S1"/>
+</net>
+<net code="20" name="QTR_S2">
+<node ref="U1" pin="7" pinfunction="D33"/>
+<node ref="J1" pin="5" pinfunction="S2"/>
+</net>
+<net code="21" name="QTR_S3">
+<node ref="U1" pin="8" pinfunction="D25"/>
+<node ref="J1" pin="6" pinfunction="S3"/>
+</net>
+<net code="22" name="QTR_S4">
+<node ref="U1" pin="9" pinfunction="D26"/>
+<node ref="J1" pin="7" pinfunction="S4"/>
+</net>
+<net code="23" name="QTR_S5">
+<node ref="U1" pin="10" pinfunction="D27"/>
+<node ref="J1" pin="8" pinfunction="S5"/>
+</net>
+<net code="24" name="QTR_S6">
+<node ref="U1" pin="11" pinfunction="D14"/>
+<node ref="J1" pin="9" pinfunction="S6"/>
+</net>
+<net code="25" name="QTR_S7">
+<node ref="U1" pin="13" pinfunction="D13"/>
+<node ref="J1" pin="10" pinfunction="S7"/>
+</net>
+<net code="26" name="QTR_S8">
+<node ref="U1" pin="26" pinfunction="D4"/>
+<node ref="J1" pin="11" pinfunction="S8"/>
+</net>
+<net code="27" name="START">
+<node ref="U1" pin="5" pinfunction="D35"/>
+<node ref="R3" pin="2" pinfunction="-"/>
+<node ref="SW1" pin="1" pinfunction="D35"/>
+</net>
+<net code="28" name="STBY">
+<node ref="U2" pin="4" pinfunction="STBY"/>
+<node ref="R5" pin="1" pinfunction="STBY"/>
+<node ref="JP1" pin="2" pinfunction="STBY"/>
+</net>
+<net code="29" name="STBY_GPIO">
+<node ref="U1" pin="23" pinfunction="D5"/>
+<node ref="JP1" pin="1" pinfunction="GPIO5"/>
+</net>
+<net code="30" name="VBAT">
+<node ref="U2" pin="15" pinfunction="VM"/>
+<node ref="U3" pin="1" pinfunction="IN+"/>
+<node ref="F1" pin="2" pinfunction="OUT"/>
+<node ref="C1" pin="1" pinfunction="+"/>
+<node ref="R1" pin="1" pinfunction="TOP"/>
+</net>
+</nets></export>

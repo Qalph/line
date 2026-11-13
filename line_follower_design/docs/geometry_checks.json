@@ -1,0 +1,44 @@
+{
+  "wheel_to_body_nominal_clearance_mm": 2.5,
+  "overall_width_mm": 107,
+  "overall_length_mm": 135.5,
+  "height_from_assembly_stl_mm": 62.75,
+  "model_stl_bounds_mm": [
+    [
+      -53.5,
+      -27.5,
+      0.0
+    ],
+    [
+      53.5,
+      108.0,
+      62.75
+    ]
+  ],
+  "qtr_optical_face_height_mm": 3,
+  "sensor_nominal_support_spacer_mm": 18.825,
+  "caster_shim_nominal_mm": 7,
+  "battery_top_z_mm": 46,
+  "pcb_underside_z_mm": 50,
+  "board_above_wheel_top_clearance_mm": 8,
+  "sensor_to_rearmost_body_mm": 122.5,
+  "sensor_to_frontmost_body_mm": 13,
+  "full_body_stop_sensor_window_mm": [
+    122.5,
+    387
+  ],
+  "full_body_stop_50mm_margin_sensor_window_mm": [
+    172.5,
+    337
+  ],
+  "braking_displacement_after_60mm_detection_for_50mm_margins_mm": [
+    112.5,
+    277
+  ],
+  "competition_width_pass": true,
+  "competition_length_pass": true,
+  "competition_height_MODEL_ONLY_pass": true,
+  "min_side_clearance_pass": true,
+  "model_qtr_standoff_positive": true,
+  "model_caster_shim_positive": true
+}

@@ -1,0 +1,1222 @@
+{
+  "components": {
+    "U1": {
+      "value": "DOIT ESP32 DevKit V1 (30 pin)",
+      "footprint": "LF:ESP32_30",
+      "position_xy_mm": [
+        0,
+        8.9
+      ],
+      "pins": [
+        [
+          1,
+          "EN",
+          ""
+        ],
+        [
+          2,
+          "VP",
+          ""
+        ],
+        [
+          3,
+          "VN",
+          "MODE"
+        ],
+        [
+          4,
+          "D34",
+          "BAT_SENSE"
+        ],
+        [
+          5,
+          "D35",
+          "START"
+        ],
+        [
+          6,
+          "D32",
+          "QTR_S1"
+        ],
+        [
+          7,
+          "D33",
+          "QTR_S2"
+        ],
+        [
+          8,
+          "D25",
+          "QTR_S3"
+        ],
+        [
+          9,
+          "D26",
+          "QTR_S4"
+        ],
+        [
+          10,
+          "D27",
+          "QTR_S5"
+        ],
+        [
+          11,
+          "D14",
+          "QTR_S6"
+        ],
+        [
+          12,
+          "D12",
+          ""
+        ],
+        [
+          13,
+          "D13",
+          "QTR_S7"
+        ],
+        [
+          14,
+          "GND",
+          "GND"
+        ],
+        [
+          15,
+          "VIN",
+          "+5V"
+        ],
+        [
+          16,
+          "D23",
+          "QTR_LEDON"
+        ],
+        [
+          17,
+          "D22",
+          "AIN1"
+        ],
+        [
+          18,
+          "TX0",
+          ""
+        ],
+        [
+          19,
+          "RX0",
+          ""
+        ],
+        [
+          20,
+          "D21",
+          "AIN2"
+        ],
+        [
+          21,
+          "D19",
+          "PWMA"
+        ],
+        [
+          22,
+          "D18",
+          "BIN1"
+        ],
+        [
+          23,
+          "D5",
+          "STBY_GPIO"
+        ],
+        [
+          24,
+          "TX2",
+          "BIN2"
+        ],
+        [
+          25,
+          "RX2",
+          "PWMB"
+        ],
+        [
+          26,
+          "D4",
+          "QTR_S8"
+        ],
+        [
+          27,
+          "D2",
+          ""
+        ],
+        [
+          28,
+          "D15",
+          ""
+        ],
+        [
+          29,
+          "GND",
+          "GND"
+        ],
+        [
+          30,
+          "3V3",
+          "+3V3"
+        ]
+      ],
+      "note": "PIN 1 LOCATION AND ROW GAP 25.4 MUST BE MEASURED; USB to +X"
+    },
+    "U2": {
+      "value": "TB6612FNG Pololu carrier",
+      "footprint": "LF:TB6612_Pololu_713",
+      "position_xy_mm": [
+        0,
+        -23
+      ],
+      "pins": [
+        [
+          1,
+          "PWMA",
+          "PWMA"
+        ],
+        [
+          2,
+          "AIN2",
+          "AIN2"
+        ],
+        [
+          3,
+          "AIN1",
+          "AIN1"
+        ],
+        [
+          4,
+          "STBY",
+          "STBY"
+        ],
+        [
+          5,
+          "BIN1",
+          "BIN1"
+        ],
+        [
+          6,
+          "BIN2",
+          "BIN2"
+        ],
+        [
+          7,
+          "PWMB",
+          "PWMB"
+        ],
+        [
+          8,
+          "GND",
+          "GND"
+        ],
+        [
+          9,
+          "GND",
+          "GND"
+        ],
+        [
+          10,
+          "VCC",
+          "+3V3"
+        ],
+        [
+          11,
+          "AO1",
+          "ML_1"
+        ],
+        [
+          12,
+          "AO2",
+          "ML_2"
+        ],
+        [
+          13,
+          "BO2",
+          "MR_2"
+        ],
+        [
+          14,
+          "BO1",
+          "MR_1"
+        ],
+        [
+          15,
+          "VM",
+          "VBAT"
+        ],
+        [
+          16,
+          "GND",
+          "GND"
+        ]
+      ],
+      "note": "Pololu #713 footprint: rows 12.70mm, 8 pins 2.54mm apart; verify pin 1"
+    },
+    "U3": {
+      "value": "Mini360 MP2307",
+      "footprint": "LF:Mini360_MEASURE",
+      "position_xy_mm": [
+        -20,
+        -15.5
+      ],
+      "pins": [
+        [
+          1,
+          "IN+",
+          "VBAT"
+        ],
+        [
+          2,
+          "IN-",
+          "GND"
+        ],
+        [
+          3,
+          "OUT+",
+          "+5V"
+        ],
+        [
+          4,
+          "OUT-",
+          "GND"
+        ]
+      ],
+      "note": "Four holes are NONSTANDARD across Mini-360 clones - measurement required"
+    },
+    "J1": {
+      "value": "QTR-8RC RIBBON 1x11",
+      "footprint": "LF:Conn_1x11",
+      "position_xy_mm": [
+        0,
+        28
+      ],
+      "pins": [
+        [
+          1,
+          "3V3",
+          "+3V3"
+        ],
+        [
+          2,
+          "GND",
+          "GND"
+        ],
+        [
+          3,
+          "IR_LEDON",
+          "QTR_LEDON"
+        ],
+        [
+          4,
+          "S1",
+          "QTR_S1"
+        ],
+        [
+          5,
+          "S2",
+          "QTR_S2"
+        ],
+        [
+          6,
+          "S3",
+          "QTR_S3"
+        ],
+        [
+          7,
+          "S4",
+          "QTR_S4"
+        ],
+        [
+          8,
+          "S5",
+          "QTR_S5"
+        ],
+        [
+          9,
+          "S6",
+          "QTR_S6"
+        ],
+        [
+          10,
+          "S7",
+          "QTR_S7"
+        ],
+        [
+          11,
+          "S8",
+          "QTR_S8"
+        ]
+      ],
+      "note": "Order is controller header only; QTR sensor module orientation to be verified; S1 at robot left"
+    },
+    "J2": {
+      "value": "JST 2S BAT pigtail pads P2.54",
+      "footprint": "LF:JST_PIGTAIL_MEASURE",
+      "position_xy_mm": [
+        23,
+        -10
+      ],
+      "pins": [
+        [
+          1,
+          "BAT+",
+          "BAT_RAW"
+        ],
+        [
+          2,
+          "BAT-",
+          "GND"
+        ]
+      ],
+      "note": "NOT a verified JST mating connector; 2.54 PTH pads for JST pigtail pending choice of actual connector"
+    },
+    "J3": {
+      "value": "MOTOR LEFT",
+      "footprint": "LF:Conn_1x02",
+      "position_xy_mm": [
+        -19,
+        -27.5
+      ],
+      "pins": [
+        [
+          1,
+          "M+",
+          "ML_1"
+        ],
+        [
+          2,
+          "M-",
+          "ML_2"
+        ]
+      ],
+      "note": "Motor leads require adequate strain relief"
+    },
+    "J4": {
+      "value": "MOTOR RIGHT",
+      "footprint": "LF:Conn_1x02",
+      "position_xy_mm": [
+        14,
+        -18
+      ],
+      "pins": [
+        [
+          1,
+          "M+",
+          "MR_1"
+        ],
+        [
+          2,
+          "M-",
+          "MR_2"
+        ]
+      ],
+      "note": "Right motor connector offset inward due to rear power crowding"
+    },
+    "J5": {
+      "value": "BAT POWER SWITCH 2 pin",
+      "footprint": "LF:Conn_1x02",
+      "position_xy_mm": [
+        26,
+        -18
+      ],
+      "pins": [
+        [
+          1,
+          "IN",
+          "BAT_RAW"
+        ],
+        [
+          2,
+          "OUT",
+          "BAT_SWITCHED"
+        ]
+      ],
+      "note": "External in-line switch 2-pad footprint: replace with matching on-board switch after measuring"
+    },
+    "F1": {
+      "value": "3A fuse verify time-current",
+      "footprint": "LF:Fuse_1206",
+      "position_xy_mm": [
+        24,
+        -25
+      ],
+      "pins": [
+        [
+          1,
+          "IN",
+          "BAT_SWITCHED"
+        ],
+        [
+          2,
+          "OUT",
+          "VBAT"
+        ]
+      ],
+      "note": "3A 1206 fuse selection not final; measure stall/inrush, choose voltage interrupt rating"
+    },
+    "C1": {
+      "value": "470uF 16V low-ESR",
+      "footprint": "LF:CP_Radial_D8_P3.5",
+      "position_xy_mm": [
+        17,
+        -26
+      ],
+      "pins": [
+        [
+          1,
+          "+",
+          "VBAT"
+        ],
+        [
+          2,
+          "-",
+          "GND"
+        ]
+      ],
+      "note": "Polarity + to VBAT; at TB6612 VM"
+    },
+    "C2": {
+      "value": "22uF 10V",
+      "footprint": "LF:C_0805",
+      "position_xy_mm": [
+        -20,
+        -7.5
+      ],
+      "pins": [
+        [
+          1,
+          "+",
+          "+5V"
+        ],
+        [
+          2,
+          "-",
+          "GND"
+        ]
+      ],
+      "note": "Choose low-ESR X7R or appropriate 10V rating"
+    },
+    "C3": {
+      "value": "100nF 10V",
+      "footprint": "LF:C_0603",
+      "position_xy_mm": [
+        -15,
+        -7.5
+      ],
+      "pins": [
+        [
+          1,
+          "+",
+          "+3V3"
+        ],
+        [
+          2,
+          "-",
+          "GND"
+        ]
+      ],
+      "note": "3V3 decoupling; route close to output/ESP"
+    },
+    "R1": {
+      "value": "100k 1% battery divider top",
+      "footprint": "LF:R_0603",
+      "position_xy_mm": [
+        7,
+        -10
+      ],
+      "pins": [
+        [
+          1,
+          "TOP",
+          "VBAT"
+        ],
+        [
+          2,
+          "BOTTOM",
+          "BAT_SENSE"
+        ]
+      ],
+      "note": "ADC1_GPIO34"
+    },
+    "R2": {
+      "value": "33k 1% battery divider bottom",
+      "footprint": "LF:R_0603",
+      "position_xy_mm": [
+        11,
+        -10
+      ],
+      "pins": [
+        [
+          1,
+          "TOP",
+          "BAT_SENSE"
+        ],
+        [
+          2,
+          "BOTTOM",
+          "GND"
+        ]
+      ],
+      "note": "ADC calibrate against multimeter"
+    },
+    "C4": {
+      "value": "100nF optional ADC filter",
+      "footprint": "LF:C_0603",
+      "position_xy_mm": [
+        15,
+        -10
+      ],
+      "pins": [
+        [
+          1,
+          "+",
+          "BAT_SENSE"
+        ],
+        [
+          2,
+          "-",
+          "GND"
+        ]
+      ],
+      "note": "Optional/DNP; filter with source impedance"
+    },
+    "R3": {
+      "value": "10k START pullup",
+      "footprint": "LF:R_0603",
+      "position_xy_mm": [
+        -27,
+        3
+      ],
+      "pins": [
+        [
+          1,
+          "+",
+          "+3V3"
+        ],
+        [
+          2,
+          "-",
+          "START"
+        ]
+      ],
+      "note": "Required input-only D35 external pull-up"
+    },
+    "R4": {
+      "value": "10k MODE pullup",
+      "footprint": "LF:R_0603",
+      "position_xy_mm": [
+        -27,
+        14
+      ],
+      "pins": [
+        [
+          1,
+          "+",
+          "+3V3"
+        ],
+        [
+          2,
+          "-",
+          "MODE"
+        ]
+      ],
+      "note": "Required input-only VN/GPIO39 external pull-up"
+    },
+    "SW1": {
+      "value": "START optional",
+      "footprint": "LF:SW_SMD_MEASURE",
+      "position_xy_mm": [
+        -28.3,
+        7
+      ],
+      "pins": [
+        [
+          1,
+          "D35",
+          "START"
+        ],
+        [
+          2,
+          "GND",
+          "GND"
+        ]
+      ],
+      "note": "Optional side-edge SMD switch: choose real footprint"
+    },
+    "SW2": {
+      "value": "MODE optional",
+      "footprint": "LF:SW_SMD_MEASURE",
+      "position_xy_mm": [
+        -28.3,
+        19
+      ],
+      "pins": [
+        [
+          1,
+          "VN",
+          "MODE"
+        ],
+        [
+          2,
+          "GND",
+          "GND"
+        ]
+      ],
+      "note": "Optional side-edge SMD switch: choose real footprint"
+    },
+    "R5": {
+      "value": "100k STBY pulldown",
+      "footprint": "LF:R_0603",
+      "position_xy_mm": [
+        4,
+        -10
+      ],
+      "pins": [
+        [
+          1,
+          "STBY",
+          "STBY"
+        ],
+        [
+          2,
+          "GND",
+          "GND"
+        ]
+      ],
+      "note": "Keeps motors in standby at ESP32 reset"
+    },
+    "JP1": {
+      "value": "STBY SOURCE (1-2 GPIO5,2-3 3V3)",
+      "footprint": "LF:SJ_3",
+      "position_xy_mm": [
+        0,
+        -10
+      ],
+      "pins": [
+        [
+          1,
+          "GPIO5",
+          "STBY_GPIO"
+        ],
+        [
+          2,
+          "STBY",
+          "STBY"
+        ],
+        [
+          3,
+          "3V3",
+          "+3V3"
+        ]
+      ],
+      "note": "Default bridge 1-2; only use 2-3 when safe to energize on boot"
+    }
+  },
+  "nets": {
+    "MODE": [
+      [
+        "U1",
+        3,
+        "VN"
+      ],
+      [
+        "R4",
+        2,
+        "-"
+      ],
+      [
+        "SW2",
+        1,
+        "VN"
+      ]
+    ],
+    "BAT_SENSE": [
+      [
+        "U1",
+        4,
+        "D34"
+      ],
+      [
+        "R1",
+        2,
+        "BOTTOM"
+      ],
+      [
+        "R2",
+        1,
+        "TOP"
+      ],
+      [
+        "C4",
+        1,
+        "+"
+      ]
+    ],
+    "START": [
+      [
+        "U1",
+        5,
+        "D35"
+      ],
+      [
+        "R3",
+        2,
+        "-"
+      ],
+      [
+        "SW1",
+        1,
+        "D35"
+      ]
+    ],
+    "QTR_S1": [
+      [
+        "U1",
+        6,
+        "D32"
+      ],
+      [
+        "J1",
+        4,
+        "S1"
+      ]
+    ],
+    "QTR_S2": [
+      [
+        "U1",
+        7,
+        "D33"
+      ],
+      [
+        "J1",
+        5,
+        "S2"
+      ]
+    ],
+    "QTR_S3": [
+      [
+        "U1",
+        8,
+        "D25"
+      ],
+      [
+        "J1",
+        6,
+        "S3"
+      ]
+    ],
+    "QTR_S4": [
+      [
+        "U1",
+        9,
+        "D26"
+      ],
+      [
+        "J1",
+        7,
+        "S4"
+      ]
+    ],
+    "QTR_S5": [
+      [
+        "U1",
+        10,
+        "D27"
+      ],
+      [
+        "J1",
+        8,
+        "S5"
+      ]
+    ],
+    "QTR_S6": [
+      [
+        "U1",
+        11,
+        "D14"
+      ],
+      [
+        "J1",
+        9,
+        "S6"
+      ]
+    ],
+    "QTR_S7": [
+      [
+        "U1",
+        13,
+        "D13"
+      ],
+      [
+        "J1",
+        10,
+        "S7"
+      ]
+    ],
+    "GND": [
+      [
+        "U1",
+        14,
+        "GND"
+      ],
+      [
+        "U1",
+        29,
+        "GND"
+      ],
+      [
+        "U2",
+        8,
+        "GND"
+      ],
+      [
+        "U2",
+        9,
+        "GND"
+      ],
+      [
+        "U2",
+        16,
+        "GND"
+      ],
+      [
+        "U3",
+        2,
+        "IN-"
+      ],
+      [
+        "U3",
+        4,
+        "OUT-"
+      ],
+      [
+        "J1",
+        2,
+        "GND"
+      ],
+      [
+        "J2",
+        2,
+        "BAT-"
+      ],
+      [
+        "C1",
+        2,
+        "-"
+      ],
+      [
+        "C2",
+        2,
+        "-"
+      ],
+      [
+        "C3",
+        2,
+        "-"
+      ],
+      [
+        "R2",
+        2,
+        "BOTTOM"
+      ],
+      [
+        "C4",
+        2,
+        "-"
+      ],
+      [
+        "SW1",
+        2,
+        "GND"
+      ],
+      [
+        "SW2",
+        2,
+        "GND"
+      ],
+      [
+        "R5",
+        2,
+        "GND"
+      ]
+    ],
+    "+5V": [
+      [
+        "U1",
+        15,
+        "VIN"
+      ],
+      [
+        "U3",
+        3,
+        "OUT+"
+      ],
+      [
+        "C2",
+        1,
+        "+"
+      ]
+    ],
+    "QTR_LEDON": [
+      [
+        "U1",
+        16,
+        "D23"
+      ],
+      [
+        "J1",
+        3,
+        "IR_LEDON"
+      ]
+    ],
+    "AIN1": [
+      [
+        "U1",
+        17,
+        "D22"
+      ],
+      [
+        "U2",
+        3,
+        "AIN1"
+      ]
+    ],
+    "AIN2": [
+      [
+        "U1",
+        20,
+        "D21"
+      ],
+      [
+        "U2",
+        2,
+        "AIN2"
+      ]
+    ],
+    "PWMA": [
+      [
+        "U1",
+        21,
+        "D19"
+      ],
+      [
+        "U2",
+        1,
+        "PWMA"
+      ]
+    ],
+    "BIN1": [
+      [
+        "U1",
+        22,
+        "D18"
+      ],
+      [
+        "U2",
+        5,
+        "BIN1"
+      ]
+    ],
+    "STBY_GPIO": [
+      [
+        "U1",
+        23,
+        "D5"
+      ],
+      [
+        "JP1",
+        1,
+        "GPIO5"
+      ]
+    ],
+    "BIN2": [
+      [
+        "U1",
+        24,
+        "TX2"
+      ],
+      [
+        "U2",
+        6,
+        "BIN2"
+      ]
+    ],
+    "PWMB": [
+      [
+        "U1",
+        25,
+        "RX2"
+      ],
+      [
+        "U2",
+        7,
+        "PWMB"
+      ]
+    ],
+    "QTR_S8": [
+      [
+        "U1",
+        26,
+        "D4"
+      ],
+      [
+        "J1",
+        11,
+        "S8"
+      ]
+    ],
+    "+3V3": [
+      [
+        "U1",
+        30,
+        "3V3"
+      ],
+      [
+        "U2",
+        10,
+        "VCC"
+      ],
+      [
+        "J1",
+        1,
+        "3V3"
+      ],
+      [
+        "C3",
+        1,
+        "+"
+      ],
+      [
+        "R3",
+        1,
+        "+"
+      ],
+      [
+        "R4",
+        1,
+        "+"
+      ],
+      [
+        "JP1",
+        3,
+        "3V3"
+      ]
+    ],
+    "STBY": [
+      [
+        "U2",
+        4,
+        "STBY"
+      ],
+      [
+        "R5",
+        1,
+        "STBY"
+      ],
+      [
+        "JP1",
+        2,
+        "STBY"
+      ]
+    ],
+    "ML_1": [
+      [
+        "U2",
+        11,
+        "AO1"
+      ],
+      [
+        "J3",
+        1,
+        "M+"
+      ]
+    ],
+    "ML_2": [
+      [
+        "U2",
+        12,
+        "AO2"
+      ],
+      [
+        "J3",
+        2,
+        "M-"
+      ]
+    ],
+    "MR_2": [
+      [
+        "U2",
+        13,
+        "BO2"
+      ],
+      [
+        "J4",
+        2,
+        "M-"
+      ]
+    ],
+    "MR_1": [
+      [
+        "U2",
+        14,
+        "BO1"
+      ],
+      [
+        "J4",
+        1,
+        "M+"
+      ]
+    ],
+    "VBAT": [
+      [
+        "U2",
+        15,
+        "VM"
+      ],
+      [
+        "U3",
+        1,
+        "IN+"
+      ],
+      [
+        "F1",
+        2,
+        "OUT"
+      ],
+      [
+        "C1",
+        1,
+        "+"
+      ],
+      [
+        "R1",
+        1,
+        "TOP"
+      ]
+    ],
+    "BAT_RAW": [
+      [
+        "J2",
+        1,
+        "BAT+"
+      ],
+      [
+        "J5",
+        1,
+        "IN"
+      ]
+    ],
+    "BAT_SWITCHED": [
+      [
+        "J5",
+        2,
+        "OUT"
+      ],
+      [
+        "F1",
+        1,
+        "IN"
+      ]
+    ]
+  }
+}

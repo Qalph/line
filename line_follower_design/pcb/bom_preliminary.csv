@@ -1,0 +1,22 @@
+Ref,Value,Footprint,Quantity,Status / measurement required
+C1,470uF 16V low-ESR,LF:CP_Radial_D8_P3.5,1,Polarity + to VBAT; at TB6612 VM
+C2,22uF 10V,LF:C_0805,1,Choose low-ESR X7R or appropriate 10V rating
+C3,100nF 10V,LF:C_0603,1,3V3 decoupling; route close to output/ESP
+C4,100nF optional ADC filter,LF:C_0603,1,Optional/DNP; filter with source impedance
+F1,3A fuse verify time-current,LF:Fuse_1206,1,"3A 1206 fuse selection not final; measure stall/inrush, choose voltage interrupt rating"
+J1,QTR-8RC RIBBON 1x11,LF:Conn_1x11,1,Order is controller header only; QTR sensor module orientation to be verified; S1 at robot left
+J2,JST 2S BAT pigtail pads P2.54,LF:JST_PIGTAIL_MEASURE,1,NOT a verified JST mating connector; 2.54 PTH pads for JST pigtail pending choice of actual connector
+J3,MOTOR LEFT,LF:Conn_1x02,1,Motor leads require adequate strain relief
+J4,MOTOR RIGHT,LF:Conn_1x02,1,Right motor connector offset inward due to rear power crowding
+J5,BAT POWER SWITCH 2 pin,LF:Conn_1x02,1,External in-line switch 2-pad footprint: replace with matching on-board switch after measuring
+JP1,"STBY SOURCE (1-2 GPIO5,2-3 3V3)",LF:SJ_3,1,Default bridge 1-2; only use 2-3 when safe to energize on boot
+R1,100k 1% battery divider top,LF:R_0603,1,ADC1_GPIO34
+R2,33k 1% battery divider bottom,LF:R_0603,1,ADC calibrate against multimeter
+R3,10k START pullup,LF:R_0603,1,Required input-only D35 external pull-up
+R4,10k MODE pullup,LF:R_0603,1,Required input-only VN/GPIO39 external pull-up
+R5,100k STBY pulldown,LF:R_0603,1,Keeps motors in standby at ESP32 reset
+SW1,START optional,LF:SW_SMD_MEASURE,1,Optional side-edge SMD switch: choose real footprint
+SW2,MODE optional,LF:SW_SMD_MEASURE,1,Optional side-edge SMD switch: choose real footprint
+U1,DOIT ESP32 DevKit V1 (30 pin),LF:ESP32_30,1,PIN 1 LOCATION AND ROW GAP 25.4 MUST BE MEASURED; USB to +X
+U2,TB6612FNG Pololu carrier,LF:TB6612_Pololu_713,1,"Pololu #713 footprint: rows 12.70mm, 8 pins 2.54mm apart; verify pin 1"
+U3,Mini360 MP2307,LF:Mini360_MEASURE,1,Four holes are NONSTANDARD across Mini-360 clones - measurement required

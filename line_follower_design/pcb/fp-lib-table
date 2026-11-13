@@ -1,0 +1,1 @@
+(fp_lib_table (lib (name "LF") (type "KiCad") (uri "${KIPRJMOD}/LF.pretty") (options "") (descr "Preliminary line follower footprints - check before fabrication")))
